@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "tisltools"
+version = "0.1.0"
+description = "TISL Utility Tools"
+authors = ["meghanabhange <meghanabhange13@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fire = "^0.4.0"
+datasets = "^2.7.1"
+pandas = "^1.5.2"
+numpy = "^1.23.5"
+jupyter = "^1.0.0"
+structlog = "^22.3.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
