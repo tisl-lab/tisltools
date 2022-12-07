@@ -99,4 +99,4 @@ class DatasetLoader:
         Push dataset to huggingface model hub
         :param dataset_name: Name of the dataset to push
         """
-        dataset.push_to_hub(dataset_name)
+        dataset.push_to_hub(dataset_name, **kwargs)
