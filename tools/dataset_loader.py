@@ -93,3 +93,10 @@ class DatasetLoader:
             return load_dataset(dataset_name, split=split, **kwargs)
         else:
             raise ValueError("Dataset name not provided")
+
+    def push_dataset_to_huggingface_model_hub(self, dataset_name, dataset, **kwargs):
+        """
+        Push dataset to huggingface model hub
+        :param dataset_name: Name of the dataset to push
+        """
+        dataset.push_to_hub(dataset_name)
